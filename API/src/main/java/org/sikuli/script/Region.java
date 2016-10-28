@@ -82,7 +82,7 @@ public class Region {
   /**
    * Flag, if an observer is running on this region {@link Settings}
    */
-  private boolean observing = false;
+  private boolean observing = false; //should be AtomicBoolean instead?
   private float observeScanRate = Settings.ObserveScanRate;
   private int repeatWaitTime = Settings.RepeatWaitTime;
   /**
